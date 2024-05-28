@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightcyan !important;
+}
+
+/* Estilos específicos */
+header {
+    background-color: lightblue;
+    padding: 20px;
+    border-bottom: 1px solid blueviolet;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+header .dropdown {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+.navbar {
+    background-color: #001f3f; /* Color azul oscuro */
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.navbar a:hover {
+    background-color: #003366; /* Un azul más claro para el hover */
+    color: white;
+}
+
+.container h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.text-subtitle {
+    color: gray ;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-color: lightblue;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Estilos para la sección Misión, Visión y Valores */
+.col-md-4.text-center {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.col-md-4.text-center:hover {
+    transform: translateY(-5px); /* Eleva la carta cuando se pasa el cursor */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3); /* Agrega una sombra suave */
+}
+
+.col-md-4.text-center:hover h4 {
+    color: #333; /* Cambia el color del título al pasar el cursor */
+}
+
+.col-md-4.text-center:hover p {
+    color: #666; /* Cambia el color del texto al pasar el cursor */
+}
+
+.col-md-4.text-center:hover ul li {
+    color: #666; /* Cambia el color del texto al pasar el cursor */
+}
+
+/* Estilos para las cartas */
+.card {
+    margin-bottom: 20px; /* Espacio entre las cartas */
+    border: none; /* Elimina el borde predeterminado */
+    border-radius: 10px; /* Agrega bordes redondeados */
+    overflow: hidden; /* Evita que el contenido se desborde */
+    box-shadow: 0px 0px 10px 0px black; /* Agrega una sombra suave */
+}
+
+.card-body {
+    padding: 20px; /* Añade espacio interno */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Tamaño del título */
+    color: #333; /* Color del título */
+}
+
+.card-text {
+    color: #666; /* Color del texto */
+}
+
+.card ul li {
+    transition: transform 0.3s ease; /* Transición para el efecto de escala */
+}
